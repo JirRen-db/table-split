@@ -51,9 +51,9 @@ public class StringNumberIncreaseHelper {
 	
 	@Test
 	public void test2() {
-		String begin = "898600C4101200000001";
-		String end = "898600C4101200000249";
-		List<String> iccIdList = getIccIdList(begin, end);
+		String begin = "460022404219341";
+		String end = "460022404219740";
+		List<String> iccIdList = getIdList(begin, end);
 		System.out.println("iccid size is " + iccIdList.size());
 	}
 	
@@ -77,7 +77,7 @@ public class StringNumberIncreaseHelper {
 		}
 	}
 	
-	public static List<String> getIccIdList(String beginStr, String endStr) {
+	public static List<String> getIdList(String beginStr, String endStr) {
 		assert(beginStr.length() == endStr.length());
 		assert(beginStr.length() > 0);
 		int length = beginStr.length();
